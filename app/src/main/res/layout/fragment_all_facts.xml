@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Facts Fragment"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/animalslist"
+        android:gravity="end"
+        android:scrollbarSize="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/listActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+
+        android:scrollbars="vertical" />
+
+
+
+
+</LinearLayout>
